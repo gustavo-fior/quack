@@ -2,6 +2,20 @@
 
 A macOS menu bar app that plays mechanical keyboard sounds as you type.
 
+## Send to your clanker
+
+Copy this into Claude Code, Codex or any other coding agent on your Mac:
+
+````text
+Install Quack, a macOS menu bar app that plays mechanical keyboard sounds as I type.
+
+1. Check that this is a Mac running macOS 26 or later with Xcode command line tools (`xcode-select -p`). If the tools are missing, run `xcode-select --install` and wait for it to finish.
+2. Clone https://github.com/gustavo-fior/quack into ~/Developer/quack, or pull the latest if it already exists.
+3. From that folder, run `./scripts/build-app.sh --run`. This builds build/Quack.app and opens it.
+4. Quack needs Input Monitoring to hear key presses. If it isn't listed or switched on under System Settings → Privacy & Security → Input Monitoring, tell me to turn it on there. Don't change that setting yourself.
+5. When it's done, tell me the switch pack that's selected and how to turn Quack on and off (⌃⌥⌘K by default).
+````
+
 ## Build and run
 
 ```sh
